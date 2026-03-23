@@ -1,23 +1,11 @@
-import Typewriter from "./Typewriter";
-import DataTable from "./DataTable";
-import WordleGame from "./WordleGame";
-import { mockColumsData, mockRowsData } from "../mockData";
-
-const tabsList = [
-  { name: "Typewriter", component: <Typewriter /> },
-  {
-    name: "Data Table",
-    component: <DataTable data={mockRowsData} columns={mockColumsData} />,
-  },
-  { name: "Wordle Game", component: <WordleGame /> },
-];
-
 const Tabs = ({
   onTabChange,
   activeTab,
+  tabsList,
 }: {
   onTabChange: (tab: string) => void;
   activeTab: string;
+  tabsList: { name: string; component: React.ReactNode }[];
 }) => {
   return (
     <div role="tablist" className="tabs tabs-lift">

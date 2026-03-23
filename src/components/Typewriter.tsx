@@ -6,15 +6,18 @@ const Typewriter = () => {
   const [index, setIndex] = useState(0);
 
   useEffect(() => {
-    // fetch("/api/data")
-    //   .then((res) => res.json())
-    //   .then((data) => setData(data || "Hola, soy el contenido del tab 1."));
+    const fetchData = async () => {
+      // fetch("/api/data")
+      //   .then((res) => res.json())
+      //   .then((data) => setData(data || "Hola, soy el contenido del tab 1."));
 
-    setData([
-      { id: 1, text: "Hello" },
-      { id: 2, text: "from" },
-      { id: 3, text: "Ramp" },
-    ]);
+      setData([
+        { id: 1, text: "Hello" },
+        { id: 2, text: "from" },
+        { id: 3, text: "the Typewriter component" },
+      ]);
+    };
+    fetchData();
   }, []);
 
   useEffect(() => {

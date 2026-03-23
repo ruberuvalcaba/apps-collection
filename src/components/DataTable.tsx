@@ -40,14 +40,14 @@ const DataTable = ({ data, columns }: TableProps<User>) => {
                   {direction === "asc" ? "↑" : direction === "desc" ? "↓" : "↕"}
                 </button>
               )}
-              {col.filterable && (
-                <div>
-                  <input
-                    type="text"
-                    onChange={(e) => handleFilter(e.target.value, col.key)}
-                  />
-                </div>
-              )}
+              <div>
+                <input
+                  type="text"
+                  className="input"
+                  disabled={!col.filterable}
+                  onChange={(e) => handleFilter(e.target.value, col.key)}
+                />
+              </div>
             </th>
           </>
         ))}
@@ -59,7 +59,11 @@ const DataTable = ({ data, columns }: TableProps<User>) => {
             <tr key={row.id}>
               {values.map((value, index) => (
                 <td key={index}>
-                  {typeof value === "boolean" ? (value ? "Yes" : "No") : value}
+                  {typeof value === "boolean"
+                    ? value
+                      ? "True"
+                      : "False"
+                    : value}
                 </td>
               ))}
             </tr>
