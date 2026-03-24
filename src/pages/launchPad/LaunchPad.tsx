@@ -3,6 +3,8 @@ import Tabs from "./Tabs";
 import Typewriter from "../../components/Typewriter";
 import DataTable from "../../components/DataTable";
 import WordleGame from "../../components/WordleGame";
+import InMemoryDB from "../../components/OODesignLogic/InMemoryDB";
+import BankingSystem from "../../components/OODesignLogic/BankingSystem";
 import { mockColumsData, mockRowsData } from "../../mockData";
 
 const tabsList = [
@@ -12,6 +14,8 @@ const tabsList = [
     component: <DataTable data={mockRowsData} columns={mockColumsData} />,
   },
   { name: "Wordle Game", component: <WordleGame /> },
+  { name: "In Memory DB", component: <InMemoryDB /> },
+  { name: "Banking System", component: <BankingSystem /> },
 ];
 
 const LaunchPad = () => {

@@ -91,8 +91,9 @@ const WordleGame = () => {
         <form onSubmit={handleSubmit}>
           <input
             type="text"
-            className="input"
+            className="input mt-5"
             value={currentGuess}
+            placeholder="Type your guess"
             onChange={(e) => setCurrentGuess(e.target.value.slice(0, 5))}
             disabled={gameOver}
           />
