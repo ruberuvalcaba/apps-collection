@@ -40,10 +40,10 @@ const DataTable = ({ data, columns }: TableProps<User>) => {
                   {direction === "asc" ? "↑" : direction === "desc" ? "↓" : "↕"}
                 </button>
               )}
-              <div>
+              <div className="mr-3">
                 <input
                   type="text"
-                  className="input"
+                  className="input h-7"
                   disabled={!col.filterable}
                   onChange={(e) => handleFilter(e.target.value, col.key)}
                 />

@@ -97,7 +97,7 @@ const WordleGame = () => {
             onChange={(e) => setCurrentGuess(e.target.value.slice(0, 5))}
             disabled={gameOver}
           />
-          <button type="submit" className="btn">
+          <button type="submit" className="btn mt-5 ml-3">
             Guess
           </button>
         </form>
