@@ -5,6 +5,8 @@ import DataTable from "../../components/DataTable";
 import WordleGame from "../../components/WordleGame";
 import InMemoryDB from "../../components/OODesignLogic/InMemoryDB";
 import BankingSystem from "../../components/OODesignLogic/BankingSystem";
+import WordDictionary from "../../components/WordDictionary";
+import MemoizationIndexingSearch from "../../components/MemoizationIndexingSearch";
 import { mockColumsData, mockRowsData } from "../../mockData";
 
 const tabsList = [
@@ -16,6 +18,11 @@ const tabsList = [
   { name: "Wordle Game", component: <WordleGame /> },
   { name: "In Memory DB", component: <InMemoryDB /> },
   { name: "Banking System", component: <BankingSystem /> },
+  { name: "Word Dictionary", component: <WordDictionary /> },
+  {
+    name: "Memoization Indexing Search",
+    component: <MemoizationIndexingSearch />,
+  },
 ];
 
 const LaunchPad = () => {
