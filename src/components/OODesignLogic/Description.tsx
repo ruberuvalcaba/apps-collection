@@ -2,9 +2,10 @@ const Description = ({ appDescription }: { appDescription: string }) => {
   return (
     <div className="mb-10">
       <p className="mb-5">
-        <strong>{appDescription}</strong>
+        <strong>App description: </strong>
+        {appDescription}
       </p>
-      <h2 className="mb-3">Object-Oriented Design & Logic</h2>
+      <h2 className="mb-3">Object-Oriented Design & Logic Considerations</h2>
       <ul className="list-disc list-inside mb-5">
         <li>
           <strong>Class Design</strong> – Creating classes with proper
