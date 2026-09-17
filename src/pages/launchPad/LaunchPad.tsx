@@ -7,6 +7,7 @@ import InMemoryDB from "../../components/OODesignLogic/InMemoryDB";
 import BankingSystem from "../../components/OODesignLogic/BankingSystem";
 import WordDictionary from "../../components/WordDictionary";
 import MemoizationIndexingSearch from "../../components/MemoizationIndexingSearch";
+import ClassNamesPlayground from "../../components/ClassName/ClassNamesPlayground";
 import { mockColumsData, mockRowsData } from "../../mockData";
 
 const tabsList = [
@@ -23,6 +24,7 @@ const tabsList = [
     name: "Memoization Indexing Search",
     component: <MemoizationIndexingSearch />,
   },
+  { name: "Class Names Playground", component: <ClassNamesPlayground /> },
 ];
 
 const LaunchPad = () => {

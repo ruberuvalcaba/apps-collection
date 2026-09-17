@@ -6,3 +6,4 @@ Collection of mini Apps with React and TS
 - TypeScript
 - Vite
 - DaisyUI
+- tailwindCSS
