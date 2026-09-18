@@ -8,6 +8,8 @@ import BankingSystem from "../../components/OODesignLogic/BankingSystem";
 import WordDictionary from "../../components/WordDictionary";
 import MemoizationIndexingSearch from "../../components/MemoizationIndexingSearch";
 import ClassNamesPlayground from "../../components/ClassName/ClassNamesPlayground";
+import ReducePlayground from "../../components/Reduce/ReducePlayground";
+import DebouncePlayground from "../../components/DebouncePlayground";
 import { mockColumsData, mockRowsData } from "../../mockData";
 
 const tabsList = [
@@ -25,6 +27,8 @@ const tabsList = [
     component: <MemoizationIndexingSearch />,
   },
   { name: "Class Names Playground", component: <ClassNamesPlayground /> },
+  { name: "Reduce Playground", component: <ReducePlayground /> },
+  { name: "Debounce Playground", component: <DebouncePlayground /> },
 ];
 
 const LaunchPad = () => {
