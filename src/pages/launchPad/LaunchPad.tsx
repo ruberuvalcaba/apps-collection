@@ -10,6 +10,7 @@ import MemoizationIndexingSearch from "../../components/MemoizationIndexingSearc
 import ClassNamesPlayground from "../../components/ClassName/ClassNamesPlayground";
 import ReducePlayground from "../../components/Reduce/ReducePlayground";
 import DebouncePlayground from "../../components/DebouncePlayground";
+import ThrottlePlayground from "../../components/Playground/ThrottlePlayground";
 import { mockColumsData, mockRowsData } from "../../mockData";
 
 const tabsList = [
@@ -29,6 +30,7 @@ const tabsList = [
   { name: "Class Names Playground", component: <ClassNamesPlayground /> },
   { name: "Reduce Playground", component: <ReducePlayground /> },
   { name: "Debounce Playground", component: <DebouncePlayground /> },
+  { name: "Throttle Playground", component: <ThrottlePlayground /> },
 ];
 
 const LaunchPad = () => {
