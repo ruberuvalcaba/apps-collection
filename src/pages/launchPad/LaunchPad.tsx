@@ -7,9 +7,9 @@ import InMemoryDB from "../../components/OODesignLogic/InMemoryDB";
 import BankingSystem from "../../components/OODesignLogic/BankingSystem";
 import WordDictionary from "../../components/WordDictionary";
 import MemoizationIndexingSearch from "../../components/MemoizationIndexingSearch";
-import ClassNamesPlayground from "../../components/ClassName/ClassNamesPlayground";
-import ReducePlayground from "../../components/Reduce/ReducePlayground";
-import DebouncePlayground from "../../components/DebouncePlayground";
+import ClassNamesPlayground from "../../components/Playground/ClassName/ClassNamesPlayground";
+import ReducePlayground from "../../components/Playground/Reduce/ReducePlayground";
+import DebouncePlayground from "../../components/Playground/DebouncePlayground";
 import ThrottlePlayground from "../../components/Playground/ThrottlePlayground";
 import { mockColumsData, mockRowsData } from "../../mockData";
 
